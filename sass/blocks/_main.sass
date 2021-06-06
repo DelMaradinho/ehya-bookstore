@@ -1,6 +1,72 @@
 .book
     &-wrapper
         display: flex
+        justify-content: space-between
+    &__about
+        max-width: 585px
+        padding: 46px 0 56px 0
+    &__title
+        max-width: 585px
+        margin: 0 0 28px 0
+        padding: 0
+        font-family: 'Roboto Condensed', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 60px
+        letter-spacing: 0.2px
+        &--yellow
+            color: #FAAD13
+    &__author
+        margin: 0 0 36px 0
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.2px
+        text-transform: uppercase
+    &__annotation
+        margin: 0 0 56px 0
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 32px
+        color: $text-color-secondary
+    &__buttons
+        display: flex
+        max-width: 470px
+        justify-content: space-between
+    &__button
+        padding: 18px 37px
+        background-color: $secondary
+        border-radius: 8px
+        border: none
+        font-family: 'Open Sans', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 22px
+        color: #FFFFFF
+    &__read
+        padding: 16px 50px
+        border: 2px solid $secondary
+        box-sizing: border-box
+        border-radius: 8px
+        text-decoration: none
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        text-align: center
+        color: $secondary
     &__cover
+        max-height: 580px
+        padding: 103px 119px
+        background-color: rgba(179, 186, 197, 0.1)
+        mix-blend-mode: normal
+    &__image
         width: 250px
         height: auto
