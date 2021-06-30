@@ -17,15 +17,20 @@
         <div class="container">
             <div class="header-wrapper">
                 <img src="img/ehya-logo.png" alt="" class="header__logo logo">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list">
+                <nav class="header__navbar header__navbar--mobile_hidden">
+                    <ul class="header__navbar-list header__navbar-list--mobile_hidden">
                         <li class="header__navbar-item"><a href="#" class="header__navbar-link">Рекомендации</a></li>
                         <li class="header__navbar-item"><a href="#" class="header__navbar-link">Книги</a></li>
                         <li class="header__navbar-item"><a href="#" class="header__navbar-link">Блог</a></li>
                     </ul>
-                    <a href="#" class="header__get-button">Получить</a>
+                    <a href="#" class="header__get-button header__get-button--mobile_hidden">Получить</a>
                 </nav>
                 <!-- /.header__navbar -->
+                <button class="menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
             </div>
             <!-- /.navbar-wrapper -->
         </div>
@@ -35,14 +40,14 @@
     <main class="book">
         <div class="container">
             <div class="book-wrapper">
-                <div class="book__about">
+                <div class="book__about book__about--mr-1">
                     <h1 class="book__title"><span class="book__title--yellow">Design Theory:</span><br>The Psychology of Graphic Design Pricing</h1>
                     <h2 class="book__author">КНИГА МИШЕЛЯ ЯНГА</h2>
                     <p class="book__annotation">
                         Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.
                     </p>
                     <div class="book__buttons">
-                        <button class="book__button">
+                        <button class="book__button book__button--mb-1">
                             КУПИТЬ СЕЙЧАС
                         </button>
                         <a href="#" class="book__read">ЧИТАТЬ ДЕМО</a>

@@ -2,6 +2,8 @@
     .container
         max-width: 960px
     .book
+        &__about
+            padding: 0
         &__cover
             max-height: 524px
             padding: 75px 80px
@@ -14,11 +16,14 @@
             width: 450px
     .book
         &__about
-            padding: 30px 0 46px 0
+            max-width: 650px
+            padding: 30px 0
+            &--mr-1
+                margin-right: 10px
         &__title
             margin-bottom: 20px
-            font-size: 40px
-            line-height: 50px
+            font-size: 36px
+            line-height: 46px
         &__author
             margin-bottom: 20px
             font-size: 18px
@@ -27,20 +32,59 @@
             margin-bottom: 30px
             font-size: 16px
             line-height: 28px
+        &__cover
+            margin: auto 0
+            padding: 70px 40px
+        &__image
+            width: 270px
         &__buttons
             flex-wrap: wrap
         &__button
             flex-basis: 100%
-            margin-bottom: 10px
+            &--mb-1
+                margin-bottom: 10px
         &__read
             flex-basis: 100%
-        &__cover
-            margin: auto 0
-            padding: 60px 70px
 @media ( max-width: 767px )
+    .header
+        padding-top: 30px
+        padding-bottom: 50px
     .container
         max-width: 576px
         width: 92%
+    .book
+        &-wrapper
+            flex-direction: column
+        &__about
+            padding: 20px 0
+            text-align: center
+        &__buttons
+            margin: 0 auto 10px
+        &__cover
+            max-height: none
+            padding: 40px
+        &__image
+            width: 100%
 @media ( max-width: 576px )
     .container
         width: 87.5%
+    .menu
+        &-button
+            height: 11px
+            display: flex
+            padding: 0
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            border: none
+            background-color: #fff
+            cursor: pointer
+            &__line
+                width: 22px
+                height: 2.2px
+                background-color: #3A4C66
+    .header
+        &__navbar
+            &--mobile
+                &_hidden
+                    display: none
