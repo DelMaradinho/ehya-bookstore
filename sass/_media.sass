@@ -40,11 +40,19 @@
         &__buttons
             flex-wrap: wrap
         &__button
-            flex-basis: 100%
+            flex-basis: 55%
+            padding: 9px 0
+            margin-left: auto
+            margin-right: auto
+            line-height: 22px
             &--mb-1
                 margin-bottom: 10px
         &__read
-            flex-basis: 100%
+            flex-basis: 55%
+            padding: 9px 0
+            margin-left: auto
+            margin-right: auto
+            line-height: 22px
 @media ( max-width: 767px )
     .header
         padding-top: 30px
@@ -70,7 +78,7 @@
         width: 87.5%
     .menu
         &-button
-            height: 11px
+            height: 18px
             display: flex
             padding: 0
             flex-direction: column
@@ -88,3 +96,36 @@
             &--mobile
                 &_hidden
                     display: none
+@media ( max-width: 320px )
+    .container
+        max-width: 281px
+    .header
+        padding-top: 18px
+    .book
+        margin-bottom: 56px
+        &__about
+            padding-top: 10px
+            padding-bottom: 26px
+            &--mr-1
+                margin-right: 0
+        &__title
+            margin-bottom: 24px
+            font-size: 32px
+            line-height: 40px
+            text-align: center
+        &__author
+            margin-bottom: 32px
+            font-size: 16px
+        &__annotation
+            margin-bottom: 17px
+        &__button
+            flex-basis: 63%
+            &--mb-1
+                margin-bottom: 15px
+        &__read
+            flex-basis: 63%
+        &__cover
+            max-height: none
+            padding: 60px 68px
+        &__image
+            width: 143px
