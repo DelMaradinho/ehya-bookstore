@@ -8,6 +8,7 @@
     <title>ehya Bookstore - Design Theory: The Psychology of Graphic Design Pricing</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json">
 </head>
@@ -287,57 +288,76 @@
     <!-- /.recomendations-top -->
     <section class="categories">
         <div class="container">
-            <div class="categories-wrapper">
-                <div class="category">
-                    <img src="img/business-finance.svg" alt="Иконка жанра: Бизнес & Финансы" class="category__logo">
-                    <div class="category__info">
-                        <h3 class="category__title">Бизнес & Финансы</h3>
-                        <p class="category__about">
-                            Книги про мир бизнеса
-                        </p>
+                <div class="swiper-container categories-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <img src="img/business-finance.svg" alt="Иконка жанра: Бизнес & Финансы" class="category__logo">
+                                <div class="category__info">
+                                    <h3 class="category__title">Бизнес & Финансы</h3>
+                                    <p class="category__about">
+                                        Книги про мир бизнеса
+                                    </p>
+                                </div>
+                                <!-- /.category__info -->
+                            </div>
+                            <!-- /.category -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <img src="img/selfmotivation.svg" alt="Иконка жанра: Самомотивация" class="category__logo">
+                                <div class="category__info">
+                                    <h3 class="category__title">Самомотивация</h3>
+                                    <p class="category__about">
+                                        Книги о мотивации
+                                    </p>
+                                </div>
+                                <!-- /.category__info -->
+                            </div>
+                            <!-- /.category -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <img src="img/novel.svg" alt="Иконка жанра: Романы Теленовеллы" class="category__logo">
+                                <div class="category__info">
+                                    <h3 class="category__title">Романы Теленовеллы</h3>
+                                    <p class="category__about">
+                                        Книги с крутыми историями
+                                    </p>
+                                </div>
+                                <!-- /.category__info -->
+                            </div>
+                            <!-- /.category -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <img src="img/future-skills.svg" alt="Иконка жанра: Навыки будущего" class="category__logo">
+                                <div class="category__info">
+                                    <h3 class="category__title">Навыки будущего</h3>
+                                    <p class="category__about">
+                                        Книги для самоподготовки
+                                    </p>
+                                </div>
+                                <!-- /.category__info -->
+                            </div>
+                            <!-- /.category -->
+                        </div>
+                        <!-- /.swiper-slide -->
                     </div>
-                    <!-- /.category__info -->
+                    <!-- /.swiper-wrapper -->                 
+                    <button class="categories-slider__button categories-slider__button--prev"></button>
+                    <button class="categories-slider__button categories-slider__button--next"></button>
                 </div>
-                <!-- /.category -->
-                <div class="category">
-                    <img src="img/selfmotivation.svg" alt="Иконка жанра: Самомотивация" class="category__logo">
-                    <div class="category__info">
-                        <h3 class="category__title">Самомотивация</h3>
-                        <p class="category__about">
-                            Книги о мотивации
-                        </p>
-                    </div>
-                    <!-- /.category__info -->
-                </div>
-                <!-- /.category -->
-                <div class="category">
-                    <img src="img/novel.svg" alt="Иконка жанра: Романы Теленовеллы" class="category__logo">
-                    <div class="category__info">
-                        <h3 class="category__title">Романы Теленовеллы</h3>
-                        <p class="category__about">
-                            Книги с крутыми историями
-                        </p>
-                    </div>
-                    <!-- /.category__info -->
-                </div>
-                <!-- /.category -->
-                <div class="category">
-                    <img src="img/future-skills.svg" alt="Иконка жанра: Навыки будущего" class="category__logo">
-                    <div class="category__info">
-                        <h3 class="category__title">Навыки будущего</h3>
-                        <p class="category__about">
-                            Книги для самоподготовки
-                        </p>
-                    </div>
-                    <!-- /.category__info -->
-                </div>
-                <!-- /.category -->
-            </div>
-            <!-- /.categories-wrapper -->
+                <!-- /.swiper-container -->
         </div>
         <!-- /.container -->
     </section>
     <!-- /.categories -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -124,11 +124,31 @@
                 text-decoration: none
                 text-transform: uppercase
 .categories
-    &-wrapper
-        display: flex
-        justify-content: space-between
+    &-slider
+        position: relative
         padding: 60px 0 100px 0
         border-top: 1px solid #ECEEF2
+        &__button
+            width: 56px
+            height: 56px
+            position: absolute
+            z-index: 99
+            top: 38%
+            background: #FFFFFF
+            cursor: pointer
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+            border-radius: 2000px
+            border: none
+            &--prev
+                left: -28px
+                background-image: url(../img/arrow-prev.svg)
+                background-repeat: no-repeat
+                background-position: center
+            &--next
+                right: -28px
+                background-image: url(../img/arrow-next.svg)
+                background-repeat: no-repeat
+                background-position: center
 .category
     display: flex
     flex-direction: column
