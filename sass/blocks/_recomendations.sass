@@ -1,5 +1,6 @@
 .recomendations
     &__title
+        flex-basis: 100%
         margin: 0 0 30px 0
         font-family: 'Roboto Condensed', sans-serif
         font-style: normal
@@ -55,16 +56,16 @@
         background: rgba(21, 101, 216, 0.1)
         mix-blend-mode: normal
         border-radius: 8px
-        text-align: center
-        &-link
-            font-family: 'Roboto Condensed', sans-serif
-            font-style: normal
-            font-weight: 700
-            font-size: 16px
-            line-height: 20px
-            color: $secondary
-            text-decoration: none
-            text-transform: uppercase
+        border: none
+        font-family: 'Roboto Condensed', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        color: $secondary
+        text-decoration: none
+        text-transform: uppercase
+        cursor: pointer
 .book
     &__price
         margin-top: 0
@@ -90,6 +91,7 @@
         color: #FFFFFF
 .favourite
     margin-top: 10px
+    cursor: pointer
 .top
     &__of-month
         max-width: 360px
@@ -102,6 +104,8 @@
             display: flex
             margin-bottom: 35px
         &-cover
+            width: 120px
+            height: 178px
             margin-right: 28px
             border-radius: 6px
         &-title

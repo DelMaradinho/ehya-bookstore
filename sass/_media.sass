@@ -7,6 +7,68 @@
         &__cover
             max-height: 524px
             padding: 75px 80px
+    .recomendations
+        &-top
+            &__wrapper
+                flex-wrap: wrap
+        &__wrapper
+            max-width: 960px
+            margin-bottom: 30px
+        &__book
+            &-info
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
+            &-card
+                max-width: 310px
+            &-cover
+                width: 160px
+                height: 237px
+                margin-right: 10px
+            &-title
+                margin-top: 0
+                font-size: 18px
+                line-height: 26px
+            &-genre
+                margin-bottom: 16px
+    .book
+        &__price
+            18px
+        &__buy
+            margin-right: 0
+            padding: 7px auto
+    .favourite
+        align-self: center
+    .top
+        &__of
+            &-month
+                max-width: 960px
+                padding-left: 15px
+                padding-right: 15px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+        &__book
+            &-card
+                max-width: 310px
+                &:nth-child(4)
+                    display: none
+            &-cover
+                margin-right: 14px
+            &-title
+                font-size: 18px
+                line-height: 26px
+        &__best
+            &-books
+                flex-basis: 100%
+    .category
+        max-width: 225px
+        padding: 30px 0 20px 0
+        &__title
+            font-size: 18px
+        &__about
+            font-size: 14px
 @media ( max-width: 992px )
     .container
         max-width: 700px
@@ -53,13 +115,19 @@
             margin-left: auto
             margin-right: auto
             line-height: 22px
+    .top
+        &__book
+            &-card
+                &:nth-child(4)
+                    display: flex
+    .category
+        max-width: 220px
 @media ( max-width: 767px )
     .header
         padding-top: 30px
         padding-bottom: 50px
     .container
         max-width: 576px
-        width: 92%
     .book
         &-wrapper
             flex-direction: column
@@ -73,6 +141,41 @@
             padding: 40px
         &__image
             width: 100%
+        &__title
+            margin: 0 auto 20px
+    .recomendations
+        &__wrapper
+            max-width: 576px
+            align-items: flex-start
+        &__title
+            margin: 0 0 71px 0
+            text-align: center
+        &__book
+            &-card
+                width: 280px
+                flex-direction: column
+                align-items: center
+                &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+                    display: none
+            &-cover
+                width: 145px
+                height: 216px
+                margin-top: -28px
+            &-info
+                align-items: center
+            &-title
+                margin-top: 15px
+                margin-bottom: 12px
+    .book
+        &__price
+            margin-bottom: 20px
+    .top
+        &__of
+            &-month
+                justify-content: center
+    .category
+        max-width: 280px
+        margin: 0
 @media ( max-width: 576px )
     .container
         width: 87.5%
@@ -96,6 +199,22 @@
             &--mobile
                 &_hidden
                     display: none
+    .recomendations
+        &__wrapper
+            justify-content: center
+    .category
+        max-width: 140px
+        max-height: 182px
+        padding: 20px 24px
+        &__logo
+            width: 36px
+            height: 36px
+        &__title
+            font-size: 16px
+            line-height: 20px
+        &__about
+            font-size: 12px
+            line-height: 20px
 @media ( max-width: 320px )
     .container
         max-width: 280px
