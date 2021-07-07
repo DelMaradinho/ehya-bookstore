@@ -1,0 +1,46 @@
+.unpublished
+    background-color: $text-color-main
+    padding: 62px 0 78px 0
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: start
+    &__title
+        margin: 0 0 58px 0
+        font-family: 'Roboto Condensed', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        letter-spacing: 0.2px
+        color: #ffffff
+    &-slider
+        flex-basis: 100%
+        &__button
+            width: 54px
+            height: 56px
+            border-radius: 50%
+            outline: none
+            border: 0
+            background: transparent
+            border: 2px solid #FFFFFF
+            &-icon
+                fill: #ffffff
+            &-disabled
+                border-color: $text-color-secondary
+                .unpublished
+                    &-slider
+                        &__button
+                            &-icon
+                                fill: $text-color-secondary
+            &--prev
+                margin-right: 24px
+                .unpublished
+                    &-slider
+                        &__button
+                            &-icon
+                                transform: rotate(180deg)
+    &__cover
+        width: 204px
+        height: 298px
+        border-radius: 8px
