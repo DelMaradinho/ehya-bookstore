@@ -1,0 +1,83 @@
+.author
+    padding: 104px 0 100px 0
+    &__wrapper
+        max-width: 1005px
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+    &__title
+        flex-basis: 50%
+        margin: 0
+        font-family: 'Roboto Condensed', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 60px
+    &__about
+        max-width: 382px
+        margin: 0 28px 24px 0
+        font-size: 18px
+        line-height: 32px
+        color: $text-color-secondary
+    &__videos
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+.video
+    &__main
+        position: relative
+        margin-bottom: 29px
+        &-preview
+            width: 1005px
+            height: 380px
+    &__wrapper
+        position: relative
+        margin-bottom: 29px
+    &__play
+        position: absolute
+        width: 100px
+        height: 100px
+        padding: 33px 35px 28px 35px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 50
+        border-radius: 50%
+        cursor: pointer
+        &:hover
+            background-color: #FFFFFF
+            transition: 0.25s
+            .video__play-link
+                .video__play-icon
+                    .video__play-icon--path
+                        fill: $secondary
+                        transition: 0.25s
+    &__card
+        &-text
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: flex-start
+            max-width: 315px
+    &__name
+        margin: 0 0 10px 0
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        color: $text-color-main
+    &__text
+        flex-basis: 100%
+        margin: 0
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+.bookmark
+    &:hover
+        cursor: pointer
