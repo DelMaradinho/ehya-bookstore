@@ -42,7 +42,7 @@
         padding: 17px 37px
         background-color: $secondary
         border-radius: 8px
-        border: none
+        border: 2px solid $secondary
         font-family: 'Open Sans', sans-serif
         font-style: normal
         font-weight: 700
@@ -50,6 +50,11 @@
         line-height: 22px
         color: #FFFFFF
         cursor: pointer
+        &:hover
+            border: 2px solid $secondary
+            background-color: #ffffff
+            color: $secondary
+            transition: 0.5s
     &__read
         padding: 15px 49px
         border: 2px solid $secondary
@@ -63,6 +68,10 @@
         line-height: 25px
         text-align: center
         color: $secondary
+        &:hover
+            background-color: $secondary
+            color: #ffffff
+            transition: 0.5s
     &__cover
         max-height: 580px
         padding: 103px 119px
